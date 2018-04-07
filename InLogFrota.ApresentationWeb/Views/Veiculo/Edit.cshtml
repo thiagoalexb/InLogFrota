@@ -1,0 +1,51 @@
+﻿@model InLogFrota.Core.ViewModels.VeiculoViewModel
+@{
+    ViewData["Title"] = "Edição Veículo";
+}
+
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm("Edit", "Veiculo", FormMethod.Post))
+        {
+            @Html.ValidationSummary()
+            @Html.HiddenFor(x => x.Id)
+            <div class="form-group">
+                <label for="Chassi">Chassi</label>
+                @Html.TextBoxFor(x => x.Chassi, new { @class = "form-control", id = "Chassi", placeholder = "Chassi", @readonly = "readonly" })
+            </div>
+            <div class="form-group">
+                <label for="Cor">Cor</label>
+                @Html.TextBoxFor(x => x.Cor, new { @class = "form-control", id = "Cor", placeholder = "Cor" })
+            </div>
+            <div class="form-group">
+                <label for="Tipo">Tipo Veículo</label>
+                <select class="form-control" id="Tipo" name="Tipo" onchange="SetQuantidadePassageiros()" disabled>
+                    <option value="2" selected>Caminhão</option>
+                    <option value="42">Ônibus</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quantidade de passageiros</label>
+                <label id="qtdPassageiros"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Editar</button>
+        }
+    </div>
+</div>
+@section Scripts {
+    <script>
+        var SetQuantidadePassageiros = function () {
+            $("#qtdPassageiros").text($("#Tipo").val());
+        }
+
+        $(document).ready(function () {
+            SetQuantidadePassageiros();
+        });
+    </script>
+}
+

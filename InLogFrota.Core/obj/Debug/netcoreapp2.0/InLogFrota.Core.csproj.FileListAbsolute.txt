@@ -1,0 +1,12 @@
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\bin\Debug\netcoreapp2.0\InLogFrota.Core.deps.json
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\bin\Debug\netcoreapp2.0\InLogFrota.Core.dll
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\bin\Debug\netcoreapp2.0\InLogFrota.Core.pdb
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\bin\Debug\netcoreapp2.0\InLogFrota.Data.dll
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\bin\Debug\netcoreapp2.0\InLogFrota.Data.pdb
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.csprojResolveAssemblyReference.cache
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.AssemblyInfoInputs.cache
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.AssemblyInfo.cs
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.csproj.CopyComplete
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.dll
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Core\obj\Debug\netcoreapp2.0\InLogFrota.Core.pdb

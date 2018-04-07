@@ -1,0 +1,83 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Novo Veículo";
+}
+
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="errors"></div>
+        <div class="form-group">
+            <label for="chassi">Chassi</label>
+            <input type="text" id="chassiValue" , name="chassi" class="form-control" />
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="getVeiculo()">Buscar</button>
+
+        <br />
+        <br />
+        <div class="container-veiculo">
+            <div class="form-group">
+                <label for="Chassi">Chassi:</label>
+                <label id="chassi"></label>
+            </div>
+            <div class="form-group">
+                <label for="Cor">Cor:</label>
+                <label id="cor"></label>
+            </div>
+            <div class="form-group">
+                <label for="Tipo">Tipo Veículo:</label>
+                <label id="tipo"></label>
+            </div>
+            <div class="form-group">
+                <label for="Cor">Quantidade de passageiros:</label>
+                <label id="qtdP"></label>
+            </div>
+
+            <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="Edit" id="editLink">Editar</a>
+            <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="Remove" id="removeLink">Deletar</a>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        var getVeiculo = function () {
+            hideMessages();
+            let chassi = $("#chassiValue").val();
+                $.ajax({
+                    method: "GET",
+                    url: "@Url.Action("SearchByChassi", "Veiculo")",
+                    data: { chassi: chassi }
+                }).success(function (data) {
+                    if (data) {
+                        if (data.error == undefined) {
+                            $("#chassi").text(data.chassi);
+                            $("#cor").text(data.cor);
+                            $("#tipo").text(data.tipo);
+                            $("#qtdP").text(data.numeroPassageiros);
+                            $("#editLink").attr("href", "/Veiculo/Edit?chassi=" + data.chassi);
+                            $("#removeLink").attr("href", "/Veiculo/Remove?chassi=" + data.chassi);
+                            $(".container-veiculo").show();
+                        } else {
+                            $(".errors").text(data.error);
+                            $(".errors").show();
+                        }
+                    }
+                }).error(function (msg) {
+                    $(".errors").text("Ocorreu um erro, tente novamente!");
+                    $(".errors").show();
+                });
+        }
+
+        var hideMessages = function () {
+            $(".container-veiculo").hide();
+            $(".errors").hide();
+        }
+
+        $(document).ready(function () {
+            hideMessages();
+        })
+    </script>
+}

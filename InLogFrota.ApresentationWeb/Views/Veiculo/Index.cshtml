@@ -1,0 +1,48 @@
+﻿@model IEnumerable<InLogFrota.Core.ViewModels.VeiculoViewModel>
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="New">Novo</a>
+        <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="Search">Buscar</a>
+
+        <a class="btn btn-default pull-right" href="https://github.com/thiagoalexb">Sair</a>
+    </div>
+
+    <div class="col-md-12">
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Chassi</th>
+                        <th>Tipo</th>
+                        <th>Cor</th>
+                        <th>Quantidade de Passageiros</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Chassi</td>
+                            <td>@item.Tipo</td>
+                            <td>@item.Cor</td>
+                            <td>@item.NumeroPassageiros</td>
+                            <td>
+                                <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="Edit" asp-route-chassi="@item.Chassi">Editar</a>
+                                <a class="btn btn-default" asp-area="" asp-controller="Veiculo" asp-action="Remove" asp-route-chassi="@item.Chassi">Deletar</a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

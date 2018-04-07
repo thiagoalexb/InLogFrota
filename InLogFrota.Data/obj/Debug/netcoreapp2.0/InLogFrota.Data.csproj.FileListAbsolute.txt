@@ -1,0 +1,8 @@
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\bin\Debug\netcoreapp2.0\InLogFrota.Data.deps.json
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\bin\Debug\netcoreapp2.0\InLogFrota.Data.dll
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\bin\Debug\netcoreapp2.0\InLogFrota.Data.pdb
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\obj\Debug\netcoreapp2.0\InLogFrota.Data.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\obj\Debug\netcoreapp2.0\InLogFrota.Data.AssemblyInfoInputs.cache
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\obj\Debug\netcoreapp2.0\InLogFrota.Data.AssemblyInfo.cs
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\obj\Debug\netcoreapp2.0\InLogFrota.Data.dll
+C:\Users\thiag\Documents\Visual Studio 2017\Projects\InLogFrota\InLogFrota.Data\obj\Debug\netcoreapp2.0\InLogFrota.Data.pdb
